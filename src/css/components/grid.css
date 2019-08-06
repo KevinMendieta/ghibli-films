@@ -1,0 +1,21 @@
+/* grid system */
+.row {
+  display: flex;
+  flex-basis: row wrap;
+  flex: 0 1 auto;
+}
+
+.full-width {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+/* Mobile first */
+[class*="col-"] {
+  flex: 0 0 92%;
+  margin: 0 4%;
+}
+
+/* Tablet size */
+
+/* Desktop size */
