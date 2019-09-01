@@ -3,10 +3,10 @@ import FilmItem from './film-item'
 const FILMS = [
   {name: 'Totoro', description: 'bla-bla-bla', id: '123'},
   {name: 'Adventures', description: 'bla-bla-bla', id: '1234'},
-  {name: 'Fireflies', description: 'bla-bla-bla', id: '123'},
-  {name: 'Haxhi', description: 'bla-bla-bla', id: '123'},
-  {name: 'Magician', description: 'bla-bla-bla', id: '123'},
-  {name: 'Mononoque', description: 'bla-bla-bla', id: '123'}
+  {name: 'Fireflies', description: 'bla-bla-bla', id: '1235'},
+  {name: 'Haxhi', description: 'bla-bla-bla', id: '1236'},
+  {name: 'Magician', description: 'bla-bla-bla', id: '1237'},
+  {name: 'Mononoque', description: 'bla-bla-bla', id: '1238'}
 ]
 class FilmList extends React.Component {
   constructor(props) {
