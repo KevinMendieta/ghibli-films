@@ -27,13 +27,22 @@ class FilmList extends React.Component {
   }
 
   render() {
+    const { filterTerm } = this.props
     const { films, requestInProgress } = this.state
-    console.log(films)
+    
+    const filteredFilms = films.filter(film => {
+      const { title, director, description, release_date} = film
+      const searchText = `${title.toUpperCase()} ${director.toUpperCase()} ${description.toUpperCase()} ${release_date.toUpperCase()}`
+
+      return searchText.indexOf(filterTerm.toUpperCase()) >= 0
+    })
+
     if(requestInProgress) return <div className='lds-dual-ring'></div>
-    if(films.length === 0) return <div><p>No films found, sorry!</p></div>
+    if(filteredFilms.length === 0) return <div><p className="row">No films found, sorry!</p></div>
     return (     
       <ul className='films'>
-        {films.map(film => {
+        {filteredFilms
+        .map(film => {
           const { id } = film
           return <FilmItem {...film} key={id}/>
         })}

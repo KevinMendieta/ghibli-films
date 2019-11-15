@@ -3,6 +3,7 @@
   display: flex;
   flex-basis: row wrap;
   flex: 0 1 auto;
+  justify-content: center;
 }
 
 ul.films {

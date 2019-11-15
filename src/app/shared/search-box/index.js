@@ -1,10 +1,10 @@
 import React from 'react'
 
-const SearchBox = ({term}) => {
+const SearchBox = ({value, onChange}) => {
   return(
     <div className='content'>
       <div className='search'>
-        <input type='text' placeholder='Search films'></input>
+        <input type='text' placeholder='Search films' value={value} onChange={event => onChange(event)}/>
       </div>
     </div>
   )
