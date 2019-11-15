@@ -10,10 +10,10 @@ const FilmItem = (film) => {
         <div className='card-content'>
           <label className='card-label'>Director: </label>
           <span className='card-span'>{director}</span>
-          <hr></hr>
+          <br/>
           <label className='card-label'>Producer: </label>
           <span className='card-span'>{producer}</span>
-          <hr></hr>
+          <br/>
           <label className='card-label'>Year: </label>
           <span className='card-span'>{release_date}</span>
         </div>

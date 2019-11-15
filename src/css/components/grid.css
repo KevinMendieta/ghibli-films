@@ -12,10 +12,6 @@ ul.films {
   padding-inline-start: 0;
 }
 
-.films img { 
-  width: 100%;
-}
-
 .full-width {
   flex: 0 0 100%;
   margin: 0;
@@ -45,6 +41,6 @@ ul.films {
 @media (min-width: 850px) {
   .films li {
     margin-right: 0%;
-    flex: 0 0 20%;
+    flex: 0 0 28%;
   }
 }

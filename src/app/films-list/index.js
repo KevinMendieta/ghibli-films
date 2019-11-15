@@ -29,7 +29,7 @@ class FilmList extends React.Component {
   render() {
     const { films, requestInProgress } = this.state
     console.log(films)
-    if(requestInProgress) return <div><p>Loading...</p></div>
+    if(requestInProgress) return <div className='lds-dual-ring'></div>
     if(films.length === 0) return <div><p>No films found, sorry!</p></div>
     return (     
       <ul className='films'>
