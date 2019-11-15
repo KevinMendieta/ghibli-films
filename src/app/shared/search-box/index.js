@@ -2,7 +2,11 @@ import React from 'react'
 
 const SearchBox = ({term}) => {
   return(
-    <p>Search</p>
+    <div className='content'>
+      <div className='search'>
+        <input type='text' placeholder='Search films'></input>
+      </div>
+    </div>
   )
 }
 
