@@ -37,7 +37,7 @@ class FilmList extends React.Component {
       return searchText.indexOf(filterTerm.toUpperCase()) >= 0
     })
 
-    if(requestInProgress) return <div className='lds-dual-ring'></div>
+    if(requestInProgress) return <div className="row"><div className='lds-dual-ring'></div></div>
     if(filteredFilms.length === 0) return <div><p className="row">No films found, sorry!</p></div>
     return (     
       <ul className='films'>
